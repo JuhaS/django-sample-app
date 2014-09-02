@@ -42,13 +42,13 @@ DATABASES = {
     'default': {
         # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         #'ENGINE': 'django.db.backends.{{ db_engine }}',
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'prod_database_name',
+        'ENGINE': 'mysql',
+        'NAME': os.getenv('mysql_db_name'),
         # The rest is not used with sqlite3:
-        'USER': 'prod_user',
-        'PASSWORD': 'prod_p@ssword',
-        'HOST': 'localhost',
-        'PORT': '',
+        'USER': os.getenv('mysql_db_user'),
+        'PASSWORD': os.getenv('mysql_db_password'),
+        'HOST': os.getenv('mysql_db_port'),
+        'PORT': os.getenv('mysql_db_port')
     }
 }
 
