@@ -140,7 +140,7 @@ ADMIN_TOOL_APPS = (
     'admin_tools.menu',
     'admin_tools.dashboard',
 )
-
+t
 # django
 CORE_APPS = (
     'django.contrib.auth',
@@ -156,11 +156,7 @@ CORE_APPS = (
 
 EXTERNAL_APPS = (
     'django_extensions',
-    'south',
-    # If you're using Django 1.7.x or later
-    #'debug_toolbar.apps.DebugToolbarConfig',
-    # If you're using Django 1.6.x or earlier
-    'debug_toolbar',
+    'south'
 )
 
 LOCAL_APPS = (
