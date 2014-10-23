@@ -140,7 +140,7 @@ ADMIN_TOOL_APPS = (
     'admin_tools.menu',
     'admin_tools.dashboard',
 )
-t
+
 # django
 CORE_APPS = (
     'django.contrib.auth',
